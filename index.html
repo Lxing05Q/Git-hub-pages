@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: #ffffff;
+}
+header{
+    width: 100%;
+    height:70px;
+    background-color: #032840;
+}
+.btn{
+    height: 34px;
+    width: 110px;
+    border-radius: 9px;
+}
+.btn2{
+    height: 34px;
+    width: 110px;
+    border-radius: 9px;
+    left: -30px;
+}
+.container{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+.logo{
+    float: left;
+    padding: 5px 20px 0;
+    margin-top: -10px;
+    right: 20px;
+}
+.navegation{
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 65px;
+    z-index: 1000;
+}
+.navegation ul{
+    list-style: none;
+    padding: 0 10px;
+}
+.navegation ul li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+.navegation ul li:hover{
+    transform: scale(1.1);
+}
+.navegation ul li a{
+    color: #5828f5;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 25px;
+    transition: .3s linear;
+}
+.navegation ul li a:hover{
+    color: #0aa7e0;
+    transform: scale(1);
+}
+.navegation ul li:hover .hijos{
+    display: block;
+}
+.navegation .submenu .hijos{
+    display: none;
+    font-size: 4px;
+    background: #032840;
+    height: 89px;
+    position: absolute;
+    left: -50px;
+    width: 198%;
+    border-radius: 12px;
+}
+.navegation .submenu .hijos li{
+    display: block;
+    overflow: hidden;
+    top: 10px;
+    border-bottom: none;
+}
+.navegation .submenu .hijos li a{
+    display: block;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14.5px;
+}
+.container2{
+    background-image: url(717792.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    box-shadow: 0px 6px 10px 1px rgba(0,0,0,1);
+    height: 550px;
+    width: 1343px;
+}
+.Grup{
+    width:1100px;
+    background: #1f46c5;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    color: #ffffff;
+}
+@font-face {
+    font-family: fontOne;
+    src: url(Posver-Regular.ttf);
+}
+.Personable{
+    font-family: fontOne;
+    font-size: 28px;
+    text-align:center;
+}
+.container2{
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Grup1{
+    width:1200px;
+    background: #022040;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+}
+.Grup1-1{
+    width:1100px;
+    background: #04366c;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.Grup1-2{
+    width:1100px;
+    background: #04366c;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.photo{
+    margin-left: 251px;
+    border-radius: 12px;
+    border: 3px solid #4b1fc5;
+    box-shadow: 0px 6px 10px 1px rgba(0,0,0,1);
+}
+.Grup1-3{
+    width:1100px;
+    background: #022040;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.Grup1-4{
+    width:1100px;
+    background: #1f46c5;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.Mps{
+    border-radius: 12px;
+    border: 3px solid #1f46c5;
+    box-shadow: 0px 6px 10px 1px rgba(0,0,0,1);
+}
+.Foto{
+    border-radius: 12px;
+    border: 3px solid #4b1fc5;
+    box-shadow: 0px 6px 10px 1px rgba(0,0,0,1);
+}
+footer{
+    background: #000000;
+}
+html{
+    scroll-behavior: smooth;
+}
+section[id]{
+    scroll-margin-top: 40px;
+}
+.Final{
+    text-align: center;
+    color: #ffffff;
+}
+.TheEnd{
+    color: #ffffff;
+}
+    </style>
+    <header>
+        <div class="container">
+            <a href="" class="logo"><img src="jh6yhtrhtrhrthrththttht.png" height="75" width="75"></a>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="">Informacion</a></li>
+                    <li class="submenu">
+                    <a href="#Servi">Servicios</a>
+                        <ul class="hijos">
+                            <li><a href="#3d">Diseño de Impresion 3D</a></li>
+                            <li><a href="#web">Diseño de Pagina Web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#ubic">Ubicacion</a></li>
+                    <li><a href="#cont">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container2" id="Inicio">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="Personable">Oficina Tecnica</div>
+        <br>
+        <br>
+        <br>
+        <h4>En esta web se introducirá informacion<br>
+            <br>
+            respecto a los servicios técnicos sobre el ámbito de informatico
+        </h4>
+        <br><br><br><br><br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="Grup" id="Servi">
+        <center><h2>Servicios</h2></center>
+        <br>
+        <center><p>En nuestra empresa ofrecemos soluciones innovadoras para cumplir con las necesidades de nuestros clientes 
+            a través de los siguientes servicios:
+        </p></center>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="Grup1">
+        <br>
+        <section class="Grup1-1" id="3d">
+            <h2>Diseño de Impresión 3D</h2>
+            <br>
+            <p>Nuestro servicio de diseño de impresión 3D permite materializar tus ideas en objetos físicos. Ya sea que necesites prototipos, piezas personalizadas o productos para<br>
+                venta, nuestro equipo de expertos utiliza software especializado para crear modelos digitales precisos. Luego, estos modelos son impresos en alta calidad utilizando<br>
+                tecnología de vanguardia, garantizando acabados detallados y durabilidad. Este servicio es ideal para creaciones a medida, prototipos funcionales o personalización de objetos.
+            </p>
+            <br><br>
+            <img class="photo" src="R.jpeg" height="360" width="540">
+            <br><br><br>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="Grup1-2" id="web">
+            <h2>Diseño de Página Web</h2>
+            <br>
+            <p>Ofrecemos un servicio de diseño de página web enfocado en crear sitios atractivos, funcionales y adaptados a tus necesidades. Desarrollamos páginas que no solo<br> 
+            tienen un diseño estético impactante, sino que también son fáciles de navegar y están optimizadas para dispositivos móviles. Desde sitios informativos hasta tiendas<br>
+            en línea, nuestro equipo se asegura de que tu página web refleje la identidad de tu marca y proporcione una experiencia de usuario excelente.</p>
+            <br><br><br>
+            <center><img class="Foto" src="Op.jpg" height="360" width="640"></center>
+        </section>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="Grup1-3">
+        <center><p>Estos servicios están diseñados para ayudarte a llevar tus proyectos al siguiente nivel,<br>
+            brindándote productos de alta calidad y soluciones efectivas para tus necesidades digitales y creativas.</p>
+        </center>
+    </section>
+    <br>
+    <br>
+    <section id="ubic" class="Grup1-4">
+        <h2>Ubicacion</h2>
+        <br>
+        <p>Nos podes encontrar el la siguente ubicacion marcada</p>
+    </section>
+    <br><br><br>
+    <center>
+        <iframe class="Mps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2667.0367936503885!2d-58.38368764834745!3d-34.88948231066942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd55a6ec0bdf9%3A0xf29aa72b2848af1f!2sI.S.F.D.%20y%20T.%20N%C2%B0%2053!5e1!3m2!1ses-419!2sar!4v1732066778866!5m2!1ses-419!2sar" 
+        width="800" 
+        height="450" 
+        >
+        </iframe>
+    </center>
+    <br>
+    <br>
+    <footer class="Final">
+        <br><br><br><br>
+        <center>
+            <h2 id="cont">Contactos</h2>
+            <br>
+            <p>Contamos con diversos medios de comunicacion que pueden elegir :</p>
+        </center>
+        <br><br><br><br>
+        <div class="TheEnd">
+            <img src="instagram-alt-logo-24.png" width="25" height="25"> <h4>@ServiciosDiseño_ok</h4>
+            <br>
+            <br>
+            <img src="facebook-logo-24.png" width="25" height="25"> <h4>ServicioProfesional</h4>
+            <br>
+            <br>
+            <img src="gmail-logo-24.png" width="25" height="25"> <h4>DiseñoServiProfesion@gmail.com</h4>
+        </div>
+        <br><br><br>
+    </footer>
+</body>
+</html>
